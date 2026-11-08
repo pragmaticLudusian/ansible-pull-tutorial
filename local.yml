@@ -3,7 +3,7 @@
 - name: Basic System Setup
   hosts: localhost
   connection: local
-  before: true
+  become: true
 
   vars_files:
     - vars/main.yml
