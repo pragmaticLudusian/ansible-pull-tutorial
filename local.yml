@@ -52,9 +52,9 @@
        group: root
        mode: "0044"
 
-   - name: Make sure a service is enable and running
+   - name: Make sure a service is enabled and running
      ansible.builtin.service:
-       name: "{{ namanged_service }}"
+       name: "{{ mananged_service }}"
        state: started
        enabled: true
 
