@@ -54,7 +54,7 @@
 
    - name: Make sure a service is enabled and running
      ansible.builtin.service:
-       name: "{{ mananged_service }}"
+       name: "{{ managed_service }}"
        state: started
        enabled: true
 
