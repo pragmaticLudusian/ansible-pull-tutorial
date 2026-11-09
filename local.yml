@@ -11,16 +11,16 @@
   tasks:
 
     - name: Install packages and keep them updated
-      ansible.builtin.package:
+        ansible.builtin.package:
         name: "{{ packages }}"
         state: latest
 
-    - name: Set the system timezone
-      ansible.builtin.file:
-       src: "/usr/share/zoneinfo/{{ system_timezone }}"
-        dest: /etc/localtime
-        state: link
-        force: true
+     - name: Set the system timezone
+       ansible.builtin.file:
+         src: "/usr/share/zoneinfo/{{ system_timezone }}"
+         dest: /etc/localtime
+         state: link
+         force: true
 
     - name: Create the admin user
       ansible.builtin.user:
