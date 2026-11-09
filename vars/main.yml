@@ -2,7 +2,7 @@
 
 admin_user: admin
 
-admin_group: sudo
+admin_group: wheel
 
 ansible_pull_repo: "https://github.com/pragmaticLudusian/ansible-pull-tutorial.git"
 
